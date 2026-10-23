@@ -12,7 +12,7 @@ The .NET Framework 4.7.2 target is also available when referenced by older WinFo
 ## Basic usage
 
 ```csharp
-using (var client = new TcpClient(new TcpClientOptions
+using (var client = new TcpClient_sx(new TcpClientOptions
 {
     Host = "127.0.0.1",
     Port = 9000

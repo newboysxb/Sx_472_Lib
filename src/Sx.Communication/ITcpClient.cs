@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Sx.Communication
 {
-    public interface ITcpClient : IDisposable
+    public interface ITcpClient_sx : IDisposable
     {
         TcpClientState State { get; }
 

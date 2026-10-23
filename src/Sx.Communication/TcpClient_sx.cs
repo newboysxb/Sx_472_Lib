@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sx.Communication
 {
-    public sealed class TcpClient : ITcpClient
+    public sealed class TcpClient_sx : ITcpClient_sx
     {
         private readonly TcpClientOptions _options;
         private readonly object _syncRoot = new object();
@@ -18,7 +18,7 @@ namespace Sx.Communication
         private Task _receiveTask;
         private bool _disposed;
 
-        public TcpClient(TcpClientOptions options)
+        public TcpClient_sx(TcpClientOptions options)
         {
             if (options == null)
             {
@@ -30,7 +30,7 @@ namespace Sx.Communication
             _options = options;
         }
 
-        public TcpClient(string host, int port)
+        public TcpClient_sx(string host, int port)
             : this(new TcpClientOptions { Host = host, Port = port })
         {
         }

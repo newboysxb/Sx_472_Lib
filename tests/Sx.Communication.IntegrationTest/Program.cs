@@ -32,7 +32,7 @@ namespace Sx.Communication.IntegrationTest
             var serverTask = RunServerAsync(listener);
 
             var received = new TaskCompletionSource<byte[]>();
-            using (var client = new TcpClient(new TcpClientOptions
+            using (var client = new TcpClient_sx(new TcpClientOptions
             {
                 Host = IPAddress.Loopback.ToString(),
                 Port = port
