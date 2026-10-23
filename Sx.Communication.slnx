@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Sx.Communication/Sx.Communication.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Sx.Communication.IntegrationTest/Sx.Communication.IntegrationTest.csproj" />
+  </Folder>
+</Solution>
